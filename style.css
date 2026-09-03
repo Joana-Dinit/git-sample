@@ -159,7 +159,7 @@ nav {
 
 .achievements {
     max-width: none;
-    background: #eaf4ff;
+    background: #ba0d72;
 }
 
 .achievements > * {
@@ -176,10 +176,10 @@ nav {
 }
 
 .achievement-card {
-    background: white;
+    background: rgb(220, 51, 51);
     padding: 30px;
 
-    border: 1px solid #dbeafe;
+    border: 1px solid #250b48;
     border-radius: 10px;
 
     transition: 0.3s;
@@ -191,17 +191,17 @@ nav {
 }
 
 .achievement-card span {
-    color: #168aad;
+    color: #ad6616;
     font-weight: bold;
 }
 
 .achievement-card h3 {
     margin: 15px 0 10px;
-    color: #0b3d62;
+    color: #2f620b;
 }
 
 .achievement-card p {
-    color: #627d98;
+    color: #62987b;
 }
 
 
