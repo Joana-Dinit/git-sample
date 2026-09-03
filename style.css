@@ -1,0 +1,290 @@
+/* ------------------------------
+   BASIC SETTINGS
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f9ff;
+    color: #102a43;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   NAVIGATION
+------------------------------ */
+
+nav {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    border-bottom: 1px solid #dbeafe;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1261a0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #486581;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #1261a0;
+}
+
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+    min-height: 85vh;
+
+    padding: 100px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #f5f9ff
+    );
+}
+
+.intro {
+    color: #168aad;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(70px, 13vw, 180px);
+    line-height: 0.85;
+    letter-spacing: -5px;
+    color: #0b3d62;
+}
+
+.subtitle {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #486581;
+}
+
+.button {
+    width: fit-content;
+
+    margin-top: 35px;
+    padding: 13px 24px;
+
+    background: #1261a0;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #0b3d62;
+    transform: translateY(-2px);
+}
+
+
+/* ------------------------------
+   GENERAL SECTIONS
+------------------------------ */
+
+.section {
+    padding: 110px 8%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-label {
+    color: #168aad;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-size: 48px;
+    margin-bottom: 25px;
+    color: #0b3d62;
+}
+
+.description {
+    max-width: 700px;
+    font-size: 18px;
+    color: #486581;
+}
+
+
+/* ------------------------------
+   ACHIEVEMENTS
+------------------------------ */
+
+.achievements {
+    max-width: none;
+    background: #eaf4ff;
+}
+
+.achievements > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.achievement-card {
+    background: white;
+    padding: 30px;
+
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(18, 97, 160, 0.12);
+}
+
+.achievement-card span {
+    color: #168aad;
+    font-weight: bold;
+}
+
+.achievement-card h3 {
+    margin: 15px 0 10px;
+    color: #0b3d62;
+}
+
+.achievement-card p {
+    color: #627d98;
+}
+
+
+/* ------------------------------
+   CONTACT
+------------------------------ */
+
+.contact {
+    text-align: center;
+}
+
+.contact .description {
+    margin: auto;
+}
+
+.contact button {
+    margin-top: 30px;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #1261a0;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #0b3d62;
+}
+
+#message {
+    margin-top: 20px;
+    color: #168aad;
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    padding: 25px;
+    text-align: center;
+
+    background: #0b3d62;
+    color: #d9efff;
+
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .section h2 {
+        font-size: 38px;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+}
